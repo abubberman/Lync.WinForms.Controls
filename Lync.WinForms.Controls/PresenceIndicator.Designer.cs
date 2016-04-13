@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.elementHost = new System.Windows.Forms.Integration.ElementHost();
-            this.wpfPresenceIndicator = new Lync.WinForms.Controls.Wpf.PresenceIndicator();
             this.SuspendLayout();
             // 
             // elementHost
@@ -39,7 +38,7 @@
             this.elementHost.Name = "elementHost";
             this.elementHost.Size = new System.Drawing.Size(150, 150);
             this.elementHost.TabIndex = 0;
-            this.elementHost.Child = this.wpfPresenceIndicator;
+            this.elementHost.Child = null;
             // 
             // PresenceIndicator
             // 
@@ -54,6 +53,5 @@
         #endregion
 
         private System.Windows.Forms.Integration.ElementHost elementHost;
-        private Wpf.PresenceIndicator wpfPresenceIndicator;
     }
 }

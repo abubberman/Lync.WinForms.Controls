@@ -31,14 +31,14 @@
             this.presenceIndicator = new Lync.WinForms.Controls.PresenceIndicator();
             this.SuspendLayout();
             // 
-            // presenceIndicator1
+            // presenceIndicator
             // 
-            this.presenceIndicator.Location = new System.Drawing.Point(34, 12);
-            this.presenceIndicator.Name = "presenceIndicator1";
-            this.presenceIndicator.Size = new System.Drawing.Size(22, 23);
+            this.presenceIndicator.Location = new System.Drawing.Point(12, 12);
+            this.presenceIndicator.Name = "presenceIndicator";
+            this.presenceIndicator.Size = new System.Drawing.Size(17, 16);
             this.presenceIndicator.TabIndex = 0;
             // 
-            // Form1
+            // Sample
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
