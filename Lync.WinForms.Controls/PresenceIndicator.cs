@@ -1,23 +1,23 @@
-﻿
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Lync.WinForms.Controls
 {
     public partial class PresenceIndicator : UserControl
     {
+        private readonly Microsoft.Lync.Controls.PresenceIndicator presenceIndicator;
+
         public PresenceIndicator()
         {
             InitializeComponent();
 
-            elementHost.Child = new Microsoft.Lync.Controls.PresenceIndicator();
+            presenceIndicator = new Microsoft.Lync.Controls.PresenceIndicator();
+            elementHost.Child = presenceIndicator;
         }
 
-        public Microsoft.Lync.Controls.PresenceIndicator PresenceIndicatorInstance
+        public string EmailAddress
         {
-            get
-            {
-                return (Microsoft.Lync.Controls.PresenceIndicator)elementHost.Child;
-            }
+            get { return presenceIndicator.Source.ToString(); }
+            set { presenceIndicator.Source = value; }
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Lync.WinForms.Controls.Demo
         {
             InitializeComponent();
 
-            presenceIndicator.PresenceIndicatorInstance.Source = @"your@emailaddress.com";
+            presenceIndicator.EmailAddress = @"your@emailaddress.com";
         }
     }
 }
